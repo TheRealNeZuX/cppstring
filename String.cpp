@@ -82,7 +82,9 @@ const N::string N::operator+(const N::string& s1, const N::string& s2){
     return s;
 }
 std::ostream& N::operator<<(std::ostream &os, const N::string &s) {
-    os<<s.str;
+    for(int i = 0; i < s.size(); ++i){
+        os<<s.str[i];
+    }
     return os;
 }
 /*std::istream& N::operator>>(std::istream &is, N::string &s){
